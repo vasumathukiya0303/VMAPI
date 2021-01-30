@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const route = require('./route');
 
 //connect to mongodb
-mongoose.connect("mongodb+srv://vasu:1002@cluster0.vr1db.mongodb.net/vmcomapany?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true}).then(
+mongoose.connect("mongodb+srv://vasu:1002@cluster0.vr1db.mongodb.net/vmcompany?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true}).then(
     ()=>{
         const app = express();
         app.use(bodyParser.urlencoded({extended:true}));
